@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html id="background">
   <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 	<meta name="author" content="David Hart">
@@ -16,11 +16,6 @@
   </head>
 
   <body>
-	<div class="row"> <!-- Spacer Row-->
-	    <div class="span16" >
-	        <p id="padding">&nbsp;</p>
-	    </div>
-	  </div>
 	  <div class="row">
 	  	<div class="span5 offset8">
 	    	<h1>Welcome to TwitBook</h1>
@@ -28,16 +23,28 @@
 	    </div>
 	  </div>
 	  <div class="row">
-	  	<div class="span8 offset8">
-			<input type="text" ></input>
+	  	<div class="span6 offset8">
+			<input id="input_text" type="text" ></input>
 	    </div>
 	  </div>
 	  <div class="row">
-	 	<div class="span5 offset8">
-			<p>Red Pill(Twitter)       or       Blue Pill(Facebook)</p>
+	 	<div class="span21">
+			<p><img src="images/red_pill.png">  or  <img src="images/blue_pill.png"></p>
 	    </div>    
 	  </div>
-	<div  class="row" id="tweets">
+	<div class="row">
+		<div class="span8 offset2">
+			<h1>Tweets</h1>
+		</div>
+		<div class="span8 offset2">
+			<h1>Posts</h1>
+		</div>
+	</div>
+	<div  class="row">
+		<div class="span8 offset2" id="tweets">
+		</div>	
+		<div class="span8 offset2" id="posts">
+		</div>
 	</div>
 	
   </body>

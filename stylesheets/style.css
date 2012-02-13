@@ -10,3 +10,6 @@ body {
 h1,p {
 	text-align:center;
 }
+#background {
+	background:black;
+}
