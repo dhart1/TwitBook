@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html id="background">
+<html>
   <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 	<meta name="author" content="David Hart">
@@ -12,7 +12,6 @@
 
     <!-- program -->
     <script src="scripts/src/script.js"></script>
-
   </head>
 
   <body>
@@ -24,20 +23,24 @@
 	  </div>
 	  <div class="row">
 	  	<div class="span6 offset8">
-			<input id="input_text" type="text" ></input>
+			<input id="input_text" type="text" placeholder="Enter Keyword"></input>
 	    </div>
 	  </div>
 	  <div class="row">
-	 	<div class="span21">
-			<p><img src="images/red_pill.png">  or  <img src="images/blue_pill.png"></p>
+	 	<div class="span21">	
+			<p><button id="twitter_button"><img src="images/red_pill.png"></button>  		  			or  <button id="facebook_button"><img src="images/blue_pill.png"></button></p>
 	    </div>    
 	  </div>
 	<div class="row">
 		<div class="span8 offset2">
 			<h1>Tweets</h1>
+			<div id="tweets">
+			</div>
 		</div>
 		<div class="span8 offset2">
 			<h1>Posts</h1>
+			<div id="posts">
+			</div>
 		</div>
 	</div>
 	<div  class="row">

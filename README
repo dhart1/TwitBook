@@ -1,8 +1,14 @@
 Your tasks:
 
-1. Create a spotter and get it to insert tweets into the DOM
-2. Add profile images (tweet.profile_image_url)
-3. Make the tweets occur so the most recent are at the top
-4. Make the tweets slide down
-5. Alternate the colors or the background of the tweets
-6. Show a maximum of 10 tweets at a time (remove old tweets from the dom)
+Using JavaScript, jQuery, Spotter, and Bootstrap create a client-side web application that tracks some information on twitter relating to a certain search term and visualizes that information in some way.
+
+1) Your application must use an input box that allows the user to type in a search term.
+2) It must use at least one Spotter object that is gathering data from Twitter
+3) It must use several variables that keep track of some kind of information relating to the search term
+4) It must use some form of jQuery animations, like fadeIn or fadeOut
+5) Your code must be organized as in Lab 3, and must be readable and maintainable
+6) You must work alone on this project (there will be opportunities for collaboration in the future)
+7) You must set up a separate github project for this. If it is a private project, you must add me as a collaborator
+8) You'll need to submit a link to your github project on Moodle by 11:55 PM on Friday, February 17
+
+Your Github project must include at least 10 commits over the course of 5 different days. Each commit should have a meaningful commit message that explains exactly what was changed since the last iteration.
