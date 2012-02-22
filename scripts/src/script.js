@@ -4,8 +4,6 @@
 
 function main() {
 	$("#twitter_button").click(function(){
-		//$("#input_text").keyup(fucntion(e)){
-		//	if(e.keyCode== "13"){
 		var searchText = $("#input_text").val();
 		var word1_input = $("#word1_text").val();
 		var word2_input = $("#word2_text").val();
@@ -31,9 +29,11 @@ function main() {
 			else {
 				color='blue';
 			}*/
+			var object2=$("<p>"+tweet.geo+"</p");
 			var object=$("<p class='red'>"+profile_image + tweet.text +"</p>");
 			object.hide();
 			$("#tweets").prepend(object);
+			console.log(object2);
 			object.slideDown();
 			
 			if(tweet.text.match(word1)) {
@@ -53,8 +53,6 @@ function main() {
 			});
 		});	
 		s.start();
-	//		}
-	//	});
 	});
 
 
@@ -106,5 +104,8 @@ function main() {
 }
 
 $(document).ready(function() {
+	$("#input_text").val("");
+	$("#word1_text").val("");
+	$("#word2_text").val("");
 	main();
 });
