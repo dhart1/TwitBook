@@ -7,12 +7,12 @@ function main() {
 		//$("#input_text").keyup(fucntion(e)){
 		//	if(e.keyCode== "13"){
 		var searchText = $("#input_text").val();
-		var word1 = new RegExp("/"+word1_input+"/");
-		var word1_count = 0;
-		var word2 = new RegExp("/"+word2_input+"/");
-		var word2_count = 0;
 		var word1_input = $("#word1_text").val();
 		var word2_input = $("#word2_text").val();
+		var word1 = new RegExp(word1_input,'i');
+		var word2 = new RegExp(word2_input,'i');
+		var word1_count = 0;		
+		var word2_count = 0;
 		$("#result_1").empty();
 		$("#result_2").empty();
 		$("#result_1").append(word1_input);
@@ -36,13 +36,13 @@ function main() {
 			$("#tweets").prepend(object);
 			object.slideDown();
 			
-			if(tweet.text.match(word1_input)) {
+			if(tweet.text.match(word1)) {
 				word1_count++;
 			}
 			$("#twitter_hits1").empty();
 			$("#twitter_hits1").append(word1_count);
 			
-			if(tweet.text.match(word2_input)) {
+			if(tweet.text.match(word2)) {
 				word2_count++;
 			}
 			$("#twitter_hits2").empty();
@@ -60,13 +60,12 @@ function main() {
 
 		$("#facebook_button").click(function(){
 			var searchText = $("#input_text").val();
-			var word1 = new RegExp("/"+word1_input+"/");
 			var word1_count=0;
-			var word2 = new RegExp("/"+word2_input+"/");
 			var word2_count=0;
-			
 			var word1_input = $("#word1_text").val();
 			var word2_input = $("#word2_text").val();
+			var word2 = new RegExp(word2_input,'i');
+			var word1 = new RegExp(word1_input,'i');
 			$("#result_1").empty();
 			$("#result_2").empty();
 			$("#result_1").append(word1_input);
@@ -85,13 +84,13 @@ function main() {
 				$("#posts").prepend(object);
 				object.slideDown();
 				
-				if(status.message.match(word1_input)) {
+				if(status.message.match(word1)) {
 					word1_count++;
 				}
 				$("#facebook_hits1").empty();
 				$("#facebook_hits1").append(word1_count);
 
-				if(status.message.match(word2_input)) {
+				if(status.message.match(word2)) {
 					word2_count++;
 				}
 				$("#facebook_hits2").empty();
