@@ -16,9 +16,33 @@
 
   <body>
 	  <div class="row">
-	  	<div class="span5 offset8">
+	  	<div class="span3 offset2" id="search_words">
+			<table border="1" id="scoreboard">
+			<tr>
+			  <td id="topbar">Keywords</td>
+		  	  <td id="topbar">Twitter Hits</td>
+			  <td id="topbar">Facebook Hits</td>
+			</tr>
+			<tr>
+			  <td id="result_1"></td>
+			  <td id="twitter_hits1">0</td>
+			  <td id="facebook_hits1">0</td>
+			</tr>
+			<tr>
+			  <td id="result_2"></td>
+			  <td id="twitter_hits2">0</td>
+			  <td id="facebook_hits2">0</td>
+			</tr>
+			</table>
+	    </div>
+	  	<div class="span4 offset3">
 	    	<h1>Welcome to TwitBook</h1>
 	        <p>Compare your keyword with both Twitter and Facebook. Type any word you want and watch the posts come rolling in from each network!</p>
+	    </div>
+	  	<div class="span5 offset2" id="search_words">
+	        <p>Enter two words to compete against each other comparing their significance to the keyword in both Twitter and Facebook</p>
+		<input id="word1_text" type="text" placeholder="Enter Keyword"></input>
+ 		<input id="word2_text" type="text" placeholder="Enter Keyword"></input>
 	    </div>
 	  </div>
 	  <div class="row">

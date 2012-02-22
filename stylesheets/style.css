@@ -13,3 +13,22 @@ h1,p {
 #background {
 	background:black;
 }
+#search_words {
+	padding-top:40px;
+}
+#twitter_hits1, #twitter_hits2 {
+	background-color: red;
+	color: white;
+}
+#facebook_hits1, #facebook_hits2 {
+	background: blue;
+	color: white;
+}
+#result_1, #result_2 {
+	background: black;
+	color: white;
+}
+#topbar {
+	background:black;
+	color: white;
+}
