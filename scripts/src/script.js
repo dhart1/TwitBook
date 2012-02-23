@@ -23,17 +23,9 @@ function main() {
 		var object_array = [];		
 		s.register(function(tweet){
 			var profile_image="<img src='"+tweet.profile_image_url+"'/>";
-			/*if(count%2===0) {
-				color='red';
-			}
-			else {
-				color='blue';
-			}*/
-			var object2=$("<p>"+tweet.geo+"</p");
 			var object=$("<p class='red'>"+profile_image + tweet.text +"</p>");
 			object.hide();
 			$("#tweets").prepend(object);
-			console.log(object2);
 			object.slideDown();
 			
 			if(tweet.text.match(word1)) {
